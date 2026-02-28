@@ -1,0 +1,15 @@
+def check_triangle(a, b, c):
+    if a + b > c and a + c > b and b + c > a:
+        return True
+    return False
+
+def calculate_square_area(side):
+    if side <= 0:
+        return None
+    return side ** 2
+
+def get_longest_word(words_list):
+    if not words_list:
+        return None
+    return max(words_list, key=len)
+
